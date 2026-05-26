@@ -1,2 +1,5 @@
 python-telegram-bot
+gspread
+google-auth
+
 
