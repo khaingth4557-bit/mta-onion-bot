@@ -105,7 +105,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 
 def main() -> None:
     # အစ်ကို့ရဲ့ Telegram Bot Token စစ်စစ်
-    application = Application.builder().token("8073390602:AAEwUxo9_sVTbW61udQ1ohBMg9eI5PGoceU").build()
+    application = Application.builder().token("8733906002:AAEWuxo9_sVTbW61udQ1ohBMq9eI5PGoceU").build()
 
     # ⚠️ ဤနေရာတွင် လက်သည်းကွင်း ( ) အမှန်ကို ပြောင်းလဲပေးထားပါသည်
     conv_handler = ConversationHandler(
