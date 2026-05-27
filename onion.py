@@ -94,7 +94,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 
 def main() -> None:
     # 🌟 အစ်ကို့ရဲ့ Bot Token စစ်စစ်ကြီးကို ဤနေရာတွင် တပ်ဆင်ထားပါသည်
-    application = Application.builder().token("8733906002:AAEWuxo9_sVTbW61udQ1ohBMq9eI5PGoceU").build()
+    application = Application.builder().token("8733906002:AAE53OpsG2PbWb7fP1sHPRkI0aI0cI7pzeE").build()
 
     application.add_handler(CommandHandler('start', start))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
