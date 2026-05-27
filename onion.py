@@ -28,7 +28,7 @@ def get_sheet():
         scope = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
         creds = Credentials.from_service_account_info(CREDENTIALS_DICT, scopes=scope)
         client = gspread.authorize(creds)
-        # ⚠️ အစ်ကို့ Google Sheet အမည်မှာ "Onion Data" ဖြစ်ရပါမည်
+        # ⚠️ အစ်ကို့ Google Drive ထဲက Sheet အမည်ဟာ "Onion Data" ဖြစ်ရပါမည်
         return client.open("Onion Data").sheet1
     except Exception as e:
         logger.error(f"Google Sheet Connector Error: {e}")
@@ -36,7 +36,7 @@ def get_sheet():
 
 reply_keyboard = [
     ['📅 ယနေ့ချုပ်', '📆 ပြီးခဲ့သည့်အပတ်ချုပ်'],
-    ['📅 လချုပ်', '🗓️ နှစ်ချုပ်']
+    ['📅 ลချုပ်', '🗓️ နှစ်ချုပ်']
 ]
 markup = ReplyKeyboardMarkup(reply_keyboard, resize_keyboard=True)
 
@@ -103,4 +103,4 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-        
+
